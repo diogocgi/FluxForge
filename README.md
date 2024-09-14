@@ -67,9 +67,9 @@ docker exec -it ollama ollama pull llama3.1
 docker exec -it ollama ollama list
 ```
 
-Go to http://127.0.0.1:8080/ and check if:
+Go to http://127.0.0.1:8081 and check if:
 - you are able to select the downloaded Llama3.1 model
-- you can toggle the web search in the plus button on the left side of the prompt textfield
+- you can toggle the web search by presssing the plus button on the left side of the prompt textbox
 
 #### Allow WebUI to search with searxng
 
