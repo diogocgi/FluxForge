@@ -52,7 +52,7 @@ Follow the instructions at Docker's official documentation, mainly:
 > Make sure you don't have Ollama locally installed, otherwise the dockerized Ollama won't be able to start due to the 11434 port being in use
 
 Each service will be available at:
-- WebUI: http://127.0.0.1:8080/
+- WebUI: http://127.0.0.1:8081
 - Ollama: http://127.0.0.1:11434
 - SearcXng: http://127.0.0.1:11435
 
