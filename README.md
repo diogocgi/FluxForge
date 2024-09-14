@@ -49,12 +49,8 @@ Follow the instructions at Docker's official documentation, mainly:
 
 ### 1. Ollama + WebUI + Search
 
-> Make sure you don't have Ollama locally installed, otherwise the dockerized Ollama won't be able to start due to the 11434 port being in use
+> If you have Ollama locally installed,  change the ollama host port to a different one in `docker-compose.ollama.yaml`
 
-Each service will be available at:
-- WebUI: http://127.0.0.1:8081
-- Ollama: http://127.0.0.1:11434
-- SearcXng: http://127.0.0.1:11435
 
 ```bash
 docker-compose -f ./dockercompose/docker-compose.ollama.yaml up -d
@@ -66,6 +62,11 @@ docker ps -a
 docker exec -it ollama ollama pull llama3.1
 docker exec -it ollama ollama list
 ```
+
+The services should become available at:
+- WebUI: http://127.0.0.1:8081
+- Ollama: http://127.0.0.1:11434
+- Searxng: http://127.0.0.1:11435
 
 Go to http://127.0.0.1:8081 and check if:
 - you are able to select the downloaded Llama3.1 model
