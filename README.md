@@ -37,9 +37,60 @@ To tackle both these issues, I created this repository to serve as a spot for en
 
 🎉 Let's make model training easily accessible! 🎉
 
+## Main tools setup
+
+### 0. Prerequisites
+
+Make sure you have **docker** and **docker compose** correctly setup on you pc.
+
+Follow the instructions at Docker's official documentation, mainly:
+- 1.1 [Uninstall old versions](https://docs.docker.com/engine/install/ubuntu/#uninstall-old-versions)
+- 1.2 [Install using the apt repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+
+### 1. Ollama + WebUI + Search
+
+> Make sure you don't have Ollama locally installed, otherwise the dockerized Ollama won't be able to start due to the 11434 port being in use
+
+Each service will be available at:
+- WebUI: http://127.0.0.1:8080/
+- Ollama: http://127.0.0.1:11434
+- SearcXng: http://127.0.0.1:11435
+
+```bash
+docker-compose -f ./dockercompose/docker-compose.ollama.yaml up -d
+
+# check health status of the services
+docker ps -a
+
+# download llama3.1 through the dockerized ollama
+docker exec -it ollama ollama pull llama3.1
+docker exec -it ollama ollama list
+```
+
+Go to http://127.0.0.1:8080/ and check if:
+- you are able to select the downloaded Llama3.1 model
+- you can toggle the web search in the plus button on the left side of the prompt textfield
+
+#### Allow WebUI to search with searxng
+
+To allow WebUI to successfully query searxng for results, you need to make sure that you have `json` in the list of formats in searxng `settings.yml` file:
+
+```yml
+# dockercompose/searxng/settings.yml
+...
+
+  # remove format to deny access, use lower case.
+  # formats: [html, csv, json, rss]
+  formats:
+    - html
+    - json
+
+...
+```
+
 ## On the horizon...
 
-- [ ] Containarized Ollama + Webui + Search
+- [x] Containarized Ollama + Webui + Search
 - [ ] Containarized ComfyUI
 - [ ] Containarized Flux1.0 Dev Lora training with [sd-scripts](https://github.com/kohya-ss/sd-scripts)
 - [ ] ComfyUI Workflows for basic Flux usage
