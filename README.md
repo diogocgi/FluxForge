@@ -1,7 +1,29 @@
-# FluxForge
-Forge your Image Datasets and Flux Loras easily with fully containerized tools and guides. 
-> 🎉 Let's make model training easily accessible! 🎉
+<h1 align="center">🛠️ FluxForge</h1>
 
+<p align="center">
+  <i>Effortless AI Tool Deployment and Guides for Flux1.0, Ollama, and Beyond</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/diogocgi/fluxforge/graphs/contributors">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/diogocgi/fluxforge?style=flat-square">
+  </a>
+  <a href="https://github.com/diogocgi/fluxforge/network/members">
+    <img alt="Forks" src="https://img.shields.io/github/forks/diogocgi/fluxforge?style=flat-square">
+  </a>
+  <a href="https://github.com/diogocgi/fluxforge/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/diogocgi/fluxforge?style=flat-square">
+  </a>
+  <a href="https://github.com/diogocgi/fluxforge/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/diogocgi/fluxforge?style=flat-square">
+  </a>
+  <a href="https://github.com/diogocgi/fluxforge/pulse">
+    <img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/m/diogocgi/fluxforge?style=flat-square">
+  </a>
+  <a href="https://github.com/diogocgi/fluxforge/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/diogocgi/fluxforge?style=flat-square">
+  </a>
+</p>
 
 ## Introduction
 
@@ -13,7 +35,7 @@ Setting up the development environment is also a hassle, even more so for people
 
 To tackle both these issues, I created this repository to serve as a spot for enabling people to easely deploy containarized tools and guides for various Machine Learning related tasks.
 
-My goal is to help 1 other person at the very least! 😆
+🎉 Let's make model training easily accessible! 🎉
 
 ## On the horizon...
 
