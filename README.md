@@ -74,14 +74,15 @@ Go to http://127.0.0.1:8081 and check if:
 
 #### Allow WebUI to search with searxng
 
-To allow WebUI to successfully query searxng for results, you need to add `json` to the list of formats in searxng `settings.yml` file:
+To allow WebUI to query searxng, you need to add `json` to the list of formats in searxng `settings.yml` file:
+
+Enable editing the file:
 
 ```bash
-# make sure you are able to edit the file
 sudo chmod 666 dockercompose/searxng/settings.yml
 ```
 
-Then perform the change:
+Perform the change:
 
 ```yml
 # dockercompose/searxng/settings.yml
@@ -95,6 +96,14 @@ Then perform the change:
 
 ...
 ```
+
+Restart docker compose:
+
+```yml
+docker-compose -f ./dockercompose/docker-compose.ollama.yaml down
+docker-compose -f ./dockercompose/docker-compose.ollama.yaml up -d
+```
+
 
 ## On the horizon...
 
