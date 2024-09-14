@@ -11,9 +11,20 @@ From my research, there is a lot of information in the web regarding dataset gen
 
 Setting up the development environment is also a hassle, even more so for people without much programming knowledge, which may lead to many giving up before even starting.
 
-To tackle both these issues, I created this repository to serve as a spot for enabling people to easely deploying containarized tools and guides for various Machine Learning related tasks.
+To tackle both these issues, I created this repository to serve as a spot for enabling people to easely deploy containarized tools and guides for various Machine Learning related tasks.
 
 My goal is to help 1 other person at the very least! 😆
+
+## On the horizon...
+
+- [ ] Containarized Ollama + Webui + Search
+- [ ] Containarized ComfyUI
+- [ ] Containarized Flux1.0 Dev Lora training with [sd-scripts](https://github.com/kohya-ss/sd-scripts)
+- [ ] ComfyUI Workflows for basic Flux usage
+- [ ] ComfyUI Workflows for dataset generation
+- [ ] ComfyUI Workflows for dataset captioning
+- [ ] Lora dataset generation guides
+- [ ] Flux Lora training guides
 
 
 ## Contributions
